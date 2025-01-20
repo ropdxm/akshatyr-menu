@@ -11,7 +11,7 @@ export default async function WaiterPage(){
     return <><Container className="px-3" style={{backgroundColor: "rgba(239, 239, 239, 0.8)", boxShadow: "none !important"}}>
         {cart && cart.map((prod: any, index: number) => {
             if(prod.amount!=0){ 
-            return <Container className="flex flex-col" style={{boxShadow: "none !important", marginBottom: "0.4rem"}}>
+            return <Container key={index} className="flex flex-col" style={{boxShadow: "none !important", marginBottom: "0.4rem"}}>
             <div className="flex justify-between"><Text size="small">{restaurant.products[index].title}</Text>
             <Text size="small">{prod.price}</Text>
             </div>

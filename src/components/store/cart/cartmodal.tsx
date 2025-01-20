@@ -49,11 +49,11 @@ export default function CartModal({
 }
 
 function CartItem({ item, ind }: { item: any, ind: number }) {
+  const {cart, setCart, itemsInCart, setItemsInCart} = useContext(akContext);
 
   if(item.amount==0){
     return <></>;
   }
-  const {cart, setCart, itemsInCart, setItemsInCart} = useContext(akContext);
 
   return (
     <div className="flex items-center gap-4">
