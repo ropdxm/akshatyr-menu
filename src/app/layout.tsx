@@ -18,7 +18,7 @@ export const dynamic = "force-dynamic";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Medusa Eats",
+  title: "Akshatyr Menu",
   description: "Order food from your favorite restaurants",
 };
 
