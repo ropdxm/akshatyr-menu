@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: rgb(var(--fg-base));
+  background: rgb(var(--bg-subtle));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
