@@ -3,10 +3,12 @@
 import { restaurant } from "@frontend/components/common/maincom"
 import { akContext } from "@frontend/components/context"
 import { Button, Container, Text } from "@medusajs/ui"
+import { useRouter } from "next/navigation"
 import { useContext } from "react"
 
   
 export default async function WaiterPage(){
+    const router = useRouter();
     const {cart} = useContext(akContext);
     return <><Container className="px-3" style={{backgroundColor: "rgba(239, 239, 239, 0.8)", boxShadow: "none !important"}}>
         {cart && cart.map((prod: any, index: number) => {
@@ -24,7 +26,7 @@ export default async function WaiterPage(){
             return <></>
         })}
     </Container>
-    <div className="flex justify-center"><Button>Назад</Button></div>
+    <div className="flex justify-center"><Button onClick={() => {router.push("/")}}>Назад</Button></div>
     </>
 
 }
