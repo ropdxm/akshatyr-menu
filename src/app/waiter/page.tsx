@@ -17,7 +17,7 @@ export default async function WaiterPage(){
             <div className="flex justify-between"><Text size="small">{restaurant.products[index].title}</Text>
             <Text size="small">{prod.price}</Text>
             </div>
-            <div style={{boxSizing: "border-box", borderBlockStart: "1px solid rgba(5, 5, 5, 0.08)"}}></div>
+            <div className="my-2" style={{boxSizing: "border-box", borderBlockStart: "1px solid rgba(5, 5, 5, 0.08)"}}></div>
         <div className="flex flex-row-reverse p">
             <Text size="small">{prod.amount} x {prod.price} = {prod.amount*prod.price} KZT</Text>
         </div>
